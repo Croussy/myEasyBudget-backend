@@ -1,0 +1,28 @@
+{
+  "name": "transaction",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "amount": {
+      "type": "number",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "budget": {
+      "type": "belongsTo",
+      "model": "budget",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

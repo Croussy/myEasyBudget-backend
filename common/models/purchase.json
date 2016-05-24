@@ -1,0 +1,36 @@
+{
+  "name": "purchase",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "namePurchase": {
+      "type": "string",
+      "required": true
+    },
+    "amountPurchase": {
+      "type": "number",
+      "required": true
+    },
+    "nameSeller": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "budget": {
+      "type": "belongsTo",
+      "model": "budget",
+      "foreignKey": ""
+    },
+    "category": {
+      "type": "belongsTo",
+      "model": "category",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

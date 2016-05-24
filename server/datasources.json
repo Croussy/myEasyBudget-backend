@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "myEasyBudgetDatasource": {
+    "host": "localhost",
+    "port": "27017",
+    "database": "myEasyBudget",
+    "username": "myEasyBudgetUser",
+    "password": "My3aSyBuD9Et",
+    "name": "myEasyBudgetDatasource",
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nameAccount": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number",
+      "required": true
+    },
+    "nameBank": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "budgets": {
+      "type": "hasMany",
+      "model": "budget",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

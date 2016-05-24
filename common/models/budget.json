@@ -1,0 +1,48 @@
+{
+  "name": "budget",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "number",
+      "required": true
+    },
+    "dateDeb": {
+      "type": "date",
+      "required": true
+    },
+    "dateEnd": {
+      "type": "date"
+    },
+    "isClosure": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "account": {
+      "type": "belongsTo",
+      "model": "account",
+      "foreignKey": ""
+    },
+    "purchases": {
+      "type": "hasMany",
+      "model": "purchase",
+      "foreignKey": ""
+    },
+    "transactions": {
+      "type": "hasMany",
+      "model": "transaction",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
