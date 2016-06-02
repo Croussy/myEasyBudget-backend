@@ -23,10 +23,6 @@
     },
     "isClosure": {
       "type": "boolean"
-    },
-    "target_amount": {
-      "type": "number",
-      "required": true
     }
   },
   "validations": [],
