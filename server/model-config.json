@@ -51,5 +51,9 @@
   "transaction": {
     "dataSource": "myEasyBudgetDatasource",
     "public": true
+  },
+  "project": {
+    "dataSource": "myEasyBudgetDatasource",
+    "public": true
   }
 }
