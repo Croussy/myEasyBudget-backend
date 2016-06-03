@@ -22,6 +22,12 @@
     },
     "is_ended": {
       "type": "boolean"
+    },
+    "dateDeb": {
+      "type": "date"
+    },
+    "dateEnd": {
+      "type": "date"
     }
   },
   "validations": [],
