@@ -41,6 +41,11 @@
       "type": "hasMany",
       "model": "transaction",
       "foreignKey": ""
+    },
+    "goalCategories": {
+      "type": "hasMany",
+      "model": "goalCategory",
+      "foreignKey": ""
     }
   },
   "acls": [],

@@ -55,5 +55,9 @@
   "project": {
     "dataSource": "myEasyBudgetDatasource",
     "public": true
+  },
+  "goalCategory": {
+    "dataSource": "myEasyBudgetDatasource",
+    "public": true
   }
 }

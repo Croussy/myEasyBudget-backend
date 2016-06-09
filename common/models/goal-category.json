@@ -1,21 +1,21 @@
 {
-  "name": "purchase",
+  "name": "goalCategory",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "namePurchase": {
-      "type": "string",
-      "required": true
-    },
-    "amountPurchase": {
+    "targetAmountCateg": {
       "type": "number",
       "required": true
     },
-    "nameSeller": {
-      "type": "string"
+    "amountCateg": {
+      "type": "number"
+    },
+    "nameCategory": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
@@ -25,14 +25,14 @@
       "model": "budget",
       "foreignKey": ""
     },
+    "purchases": {
+      "type": "hasMany",
+      "model": "purchase",
+      "foreignKey": ""
+    },
     "category": {
       "type": "belongsTo",
       "model": "category",
-      "foreignKey": ""
-    },
-    "goalCategory": {
-      "type": "belongsTo",
-      "model": "goalCategory",
       "foreignKey": ""
     }
   },
