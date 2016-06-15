@@ -13,11 +13,6 @@
   },
   "validations": [],
   "relations": {
-    "purchases": {
-      "type": "hasMany",
-      "model": "purchase",
-      "foreignKey": ""
-    },
     "goalCategories": {
       "type": "hasMany",
       "model": "goalCategory",
