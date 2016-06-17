@@ -14,8 +14,7 @@
       "type": "number"
     },
     "nameCategory": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   },
   "validations": [],

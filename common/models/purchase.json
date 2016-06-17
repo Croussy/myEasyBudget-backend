@@ -16,6 +16,10 @@
     },
     "nameSeller": {
       "type": "string"
+    },
+    "date_purchase": {
+      "type": "date",
+      "required": true
     }
   },
   "validations": [],
