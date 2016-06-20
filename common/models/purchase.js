@@ -15,4 +15,24 @@ module.exports = function(Purchase) {
     });
     next();
   });
+
+  Purchase.observe('before delete', function(ctx, next) {
+    var Purchase = ctx.Model.app.models.Purchase;
+    var GoalCategory = ctx.Model.app.models.GoalCategory;
+    var Budget = ctx.Model.app.models.Budget;
+
+    Purchase.find({where: {id: ctx.where.id}}, function(err, data) {
+      var purchase = data[0];
+      GoalCategory.find({where: {id: purchase.goalCategoryId}}, function(err, data) {
+        data[0].amountCateg -= purchase.amountPurchase;
+        data[0].save();
+      });
+
+      Budget.find({where: {id: purchase.budgetId}}, function(err, data) {
+        data[0].amount +=  purchase.amountPurchase;
+        data[0].save();
+      });
+    });
+    next();
+  });
 };
