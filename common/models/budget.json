@@ -11,8 +11,7 @@
       "required": true
     },
     "amount": {
-      "type": "number",
-      "required": true
+      "type": "number"
     },
     "dateDeb": {
       "type": "date",
@@ -23,6 +22,10 @@
     },
     "isClosure": {
       "type": "boolean"
+    },
+    "target_amount": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],
